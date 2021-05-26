@@ -22,16 +22,16 @@ const Project = (props) => {
                         <h3 className="text-center">Outros Projetos</h3>
                         <div className="row gallery">
                             <div className="col-md-4 col-lg-3">
-                                <div className="item"><a href="#"><img className="img-fluid scale-on-hover" src="assets/img/nature/image2.jpg" /></a></div>
+                                <div className="item"><a href="/"><img alt="" className="img-fluid scale-on-hover" src="assets/img/nature/image2.jpg" /></a></div>
                             </div>
                             <div className="col-md-4 col-lg-3">
-                                <div className="item"><a href="#"><img className="img-fluid scale-on-hover" src="assets/img/nature/image3.jpg" /></a></div>
+                                <div className="item"><a href="/"><img alt="" className="img-fluid scale-on-hover" src="assets/img/nature/image3.jpg" /></a></div>
                             </div>
                             <div className="col-md-4 col-lg-3">
-                                <div className="item"><a href="#"><img className="img-fluid scale-on-hover" src="assets/img/tech/image4.jpg" /></a></div>
+                                <div className="item"><a href="/"><img alt="" className="img-fluid scale-on-hover" src="assets/img/tech/image4.jpg" /></a></div>
                             </div>
                             <div className="col-md-4 col-lg-3">
-                                <div className="item"><a href="#"><img className="img-fluid scale-on-hover" src="assets/img/nature/image5.jpg" /></a></div>
+                                <div className="item"><a href="/"><img alt="" className="img-fluid scale-on-hover" src="assets/img/nature/image5.jpg" /></a></div>
                             </div>
                         </div>
                     </div>
