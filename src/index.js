@@ -4,7 +4,6 @@ import App from './App';
 import Projects from './Projects';
 import CV from './CV';
 import Contact from './Contact';
-
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 
