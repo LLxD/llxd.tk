@@ -24,7 +24,7 @@ const Projects = () => {
                             <CardProjeto online={1} code={"https://github.com/ArticaDev/limengenharia"} url={"https://limengenharia.com/"} titulo={"LIM Engenharia"} desc={"Um site para uma empresa de engenharia civil"} lang={"React"} />
                             <CardProjeto code={"https://github.com/LLxD/draftools"} titulo={"Draftools"} desc={"Um site que faz análises de composições para League of Legends"} lang={"React"} />
                             <CardProjeto online={1} code={"https://github.com/LLxD/abelinhas"} url={"http://abelinhas.ml/"} titulo={"Abelinhas"} desc={"Um site pedidos de bordados, feito para minha namorada :D"} lang={"HTML CSS JS"} />
-                            <CardProjeto online={1} code={"https://github.com/ArticaDev/impulsiona-seguidores"} url={"https://www.impulsionaseguidores.net/"} titulo={"Impulsiona Seguidores"} desc={"Um site desenvolvido com Gatsby, SSR e mais para um cliente que desejava um site com muita performance."} lang={"React Gatsby TailwindCSS"} />
+                            <CardProjeto online={1} code={"https://github.com/ArticaDev/impulsiona-seguidores"} url={"https://www.impulsionaseguidores.net/"} titulo={"Impulsiona Seguidores"} desc={"Um site desenvolvido com Gatsby, SSR e mais para um cliente que desejava um site com muita performance."} lang={"React Gatsby Tailwind"} />
                         </div>
                     </div>
                 </section>
