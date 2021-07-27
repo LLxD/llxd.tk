@@ -6,10 +6,10 @@ const Projeto = (props) => {
 
     console.log(props.lang)
 
-    if (props.lang.includes("React")) {
+    if (props.lang.toLowerCase().includes("react")) {
         color = "orange"
     }
-    else if (props.lang.includes("Electron")) {
+    else if (props.lang.toLowerCase().includes("electron")) {
         color = "black"
     }
 
