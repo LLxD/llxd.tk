@@ -19,7 +19,6 @@ const Projects = () => {
             loadprojects();
         }, []);
 
-        console.log(projects)
 
     return (
         <>
