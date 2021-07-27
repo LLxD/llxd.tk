@@ -4,6 +4,8 @@ const Projeto = (props) => {
 
     let color = "#0ea0ff"
 
+    console.log(props.lang)
+
     if (props.lang.includes("React")) {
         color = "orange"
     }
