@@ -1,9 +1,26 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import CardProjeto from './components/CardProjeto'
+import axios from 'axios';
 
 const Projects = () => {
+
+    const [projects, setProjects] = useState([]);
+    
+
+        const loadprojects = () => {
+            axios.get('https://8080-coffee-giraffe-xgorb5cw.ws-us11.gitpod.io/api/collections/get/Project?token=6844ca688dba44eed6f048bcc95b2f').then((response) => {
+                setProjects(response.data.entries)
+            });
+        };
+
+        useEffect(() => {
+            loadprojects();
+        }, []);
+
+        console.log(projects)
+
     return (
         <>
             <Navbar />
@@ -15,7 +32,13 @@ const Projects = () => {
                             <h2>meus projetos</h2>
                         </div>{/* End: portfolio heading */}
                         <div className="row">
-                            <CardProjeto online={1} code={"https://github.com/ArticaDev/cinema-podcasts"} url={"http://podcast.ocinemae.com.br/inicio"} titulo={"Podcasts - O Cinema É"} desc={"Um site que contém podcasts sobre cinema"} lang={"HTML CSS JS LARAVEL"} />
+
+                        {projects.map((project) => (
+                            <>
+                            <CardProjeto online={project.online} code={project.code} url={project.url} titulo={project.projectTitle} desc={project.projectDescription} lang={project.projectLanguages} />
+                            </>
+                ))}
+
                             <CardProjeto online={1} code={"https://github.com/ArticaDev/fatima-imoveis"} url={"http://fatimacorretora.com/casas"} titulo={"Fátima Imóveis"} desc={"Um site para uma corretora de imóveis"} lang={"HTML CSS JS laravel"} />
                             <CardProjeto online={1} code={"https://github.com/ArticaDev/braga-corretor"} url={"http://bragacorretor.com/casas"} titulo={"Braga Corretor"} desc={"Um site para um corretor de imóveis"} lang={"HTML CSS JS laravel"} />
                             <CardProjeto online={1} code={"https://github.com/roboforgeufu/roboforgeufu.github.io"} url={"https://roboforgeufu.github.io/"} titulo={"Roboforge"} desc={"Um site para uma equipe de robótica universitária"} lang={"HTML CSS JS"} />

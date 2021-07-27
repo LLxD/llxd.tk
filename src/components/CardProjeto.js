@@ -11,7 +11,7 @@ const Projeto = (props) => {
         color = "black"
     }
 
-    if (props.online === 1) {
+    if (props.online === true) {
 
         return (
             <div className="col-md-6 col-lg-4">
